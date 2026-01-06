@@ -1,0 +1,7 @@
+# ============================================
+# BACKEND SPECIFIC GITIGNORE (FastAPI + Python)
+# ============================================
+node_modules/
+.next/
+venv/
+.env

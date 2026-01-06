@@ -1,0 +1,7 @@
+# ============================================
+# FRONTEND SPECIFIC GITIGNORE (Next.js + TypeScript)
+# ============================================
+node_modules/
+.next/
+venv/
+.env

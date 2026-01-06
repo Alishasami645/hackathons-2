@@ -1,0 +1,481 @@
+# ============================================
+# ROOT LEVEL GITIGNORE
+# Full-stack Todo Web Application
+# ============================================
+
+# ============================================
+# PYTHON / BACKEND
+# ============================================
+
+# Python virtual environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+.env.example
+backend/venv/
+backend/env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+# Node
+node_modules/
+.next/
+
+# Python
+venv/
+__pycache__/
+
+# Env
+.env
+
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# mkdocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# ============================================
+# NODE.JS / FRONTEND
+# ============================================
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+jspm_packages/
+
+# Testing
+coverage/
+.nyc_output
+
+# Production builds
+.next/
+out/
+build/
+dist/
+
+# Next.js
+.next/
+out/
+build/
+.vercel
+
+# Nuxt.js
+.nuxt
+dist
+
+# Gatsby
+.cache/
+public
+
+# Webpack
+.webpack/
+
+# Parcel
+.parcel-cache/
+
+# Storybook
+storybook-static
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn
+yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+.pnp.*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# pnpm
+pnpm-debug.log*
+
+# Turborepo
+.turbo
+
+# ============================================
+# ENVIRONMENT VARIABLES & SECRETS
+# ============================================
+
+# Environment files
+.env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+
+# Backend environment
+backend/.env
+backend/.env.local
+backend/.env.production
+
+# Frontend environment
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Keep example files
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Secrets and credentials
+secrets/
+*.pem
+*.key
+*.cert
+*.crt
+credentials.json
+service-account.json
+
+# ============================================
+# DATABASES
+# ============================================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# PostgreSQL
+*.sql
+*.dump
+
+# ============================================
+# OPERATING SYSTEM FILES
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# IDEs / EDITORS
+# ============================================
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# JetBrains IDEs (PyCharm, WebStorm, IntelliJ)
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+sftp-config.json
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+bh_unicode_properties.cache
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Temporary Items
+.netrwhist
+tags
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Eclipse
+.settings/
+.classpath
+.project
+.pydevproject
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ============================================
+# LOGS & TEMPORARY FILES
+# ============================================
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ============================================
+# MISC
+# ============================================
+
+# Lock files (optional - remove if you want to track them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# poetry.lock
+
+# UV lock file (Python)
+uv.lock
+src/uv.lock
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Claude Code tasks output
+.claude/
+tasks/
+
+# Git conflict markers
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+# ============================================
+# PROJECT-SPECIFIC
+# ============================================
+
+# Specification drafts (if you want to ignore them)
+# specs/drafts/
+
+# Old console app (if you want to ignore)
+todo-app/
+
+# History/archive folders
+history/
+
+# Testing outputs
+test-results/
+playwright-report/
+test-results.xml
+
+# Build artifacts
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node & Next.js
+node_modules/
+.next/
+*.log
+.env
+
+# FastAPI static files (if auto-generated)
+backend/static/
+backend/media/
+
+# Next.js static files
+frontend/public/uploads/
+frontend/public/temp/
+
+# Uploaded files (if you have file uploads)
+uploads/
+media/
+
+# Cache directories
+.cache/
+*.cache
+
+# Misc development files
+.scratch/
+sandbox/
+experiments/
+playground/
+
+# ============================================
+# SECURITY - NEVER COMMIT THESE
+# ============================================
+
+# API Keys
+*_API_KEY*
+*_SECRET_KEY*
+*_TOKEN*
+*api_key*
+*secret_key*
+*access_token*
+
+# Database URLs with credentials
+# (keep example format in .env.example)
+
+# JWT secrets
+# (keep example in .env.example)
+
+# OAuth credentials
+*oauth*
+*client_secret*
+
+# ============================================
+# END OF GITIGNORE
+# ============================================

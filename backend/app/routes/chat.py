@@ -15,7 +15,7 @@ class ChatMessage(BaseModel):
 class ChatResponse(BaseModel):
     message: str
 
-@router.post("/api/chat/{user_id}/chat", response_model=ChatResponse)
+@router.post("/{user_id}/chat", response_model=ChatResponse)
 async def chat(user_id: str, chat_msg: ChatMessage):
     """Chat endpoint with task handling and friendly responses."""
     msg = chat_msg.message.strip()
@@ -47,12 +47,13 @@ async def chat(user_id: str, chat_msg: ChatMessage):
 
     elif msg_lower in ["hello", "hi"]:
         replies = [
+        "Hi 😄 Your Todo Assistant is ready!",
         "Hey 👋 Ready to manage your tasks today?",
         "Hello 😊 Tell me which task you want to add or delete.",
         "Hi there! 📝 I can help you organize your todo list.",
         "Welcome back 👋 What’s the next task?",
         "Hello! 💡 Try: task add Study",
-        "Hi 😄 Your Todo Assistant is ready!"
+       
         ]
         reply = random.choice(replies)
 

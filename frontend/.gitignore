@@ -5,3 +5,5 @@ node_modules/
 .next/
 venv/
 .env
+.env.local
+.env.example

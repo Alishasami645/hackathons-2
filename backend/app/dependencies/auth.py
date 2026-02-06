@@ -14,6 +14,7 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from jose import JWTError, jwt
 
+
 from app.config import settings
 
 # HTTPBearer with auto_error=False to handle missing token manually

@@ -127,13 +127,19 @@ async def create_task(
 
     Reference: specs/001-todo-web-app/contracts/tasks-api.md - POST /api/tasks
     """
+    # Handle timezone-aware datetimes from frontend
+    due_date = task_data.due_date
+    if due_date and due_date.tzinfo is not None:
+        # Convert to naive datetime (strip timezone info)
+        due_date = due_date.replace(tzinfo=None)
+    
     # Create task with user_id from JWT (FR-020)
     task = Task(
         user_id=user_id,
         title=task_data.title.strip(),
         description=task_data.description,
         priority=task_data.priority,
-        due_date=task_data.due_date,
+        due_date=due_date,
     )
 
     session.add(task)

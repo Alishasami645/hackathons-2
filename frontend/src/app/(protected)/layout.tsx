@@ -46,10 +46,26 @@ export default function ProtectedLayout({
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-sm border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/dashboard" className="text-xl font-bold text-gray-900">
-            Todo App
-          </Link>
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-8">
+            <Link href="/dashboard" className="text-xl font-bold text-gray-900">
+              Todo App
+            </Link>
+            <nav className="flex gap-4">
+              <Link
+                href="/dashboard"
+                className="text-sm text-gray-600 hover:text-gray-900 transition"
+              >
+                Dashboard
+              </Link>
+              <Link
+                href="/chat"
+                className="text-sm text-gray-600 hover:text-gray-900 transition"
+              >
+                Chat Bot
+              </Link>
+            </nav>
+          </div>
           <button
             onClick={handleSignOut}
             className="text-sm text-gray-600 hover:text-gray-900"
@@ -60,7 +76,7 @@ export default function ProtectedLayout({
       </header>
 
       {/* Main content */}
-      <main className="max-w-4xl mx-auto px-4 py-8">{children}</main>
+      <main className="max-w-7xl mx-auto px-4 py-8">{children}</main>
     </div>
   );
 }

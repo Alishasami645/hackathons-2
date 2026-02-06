@@ -15,7 +15,7 @@ class ChatMessage(BaseModel):
 class ChatResponse(BaseModel):
     message: str
 
-@router.post("/{user_id}/chat", response_model=ChatResponse)
+@router.post("/api/chat/{user_id}/chat", response_model=ChatResponse)
 async def chat(user_id: str, chat_msg: ChatMessage):
     """Chat endpoint with task handling and friendly responses."""
     msg = chat_msg.message.strip()
